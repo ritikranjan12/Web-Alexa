@@ -105,6 +105,7 @@ def main():
         res = client.query(question)
         answer = next(res.results).text
         talk(answer)
+
 @app.route('/')
 def hello():
     return render_template("ritik.html")
@@ -120,5 +121,5 @@ def submit():
     return render_template("ritik.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8080)
 
