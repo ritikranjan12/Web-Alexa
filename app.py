@@ -121,5 +121,5 @@ def submit():
     return render_template("ritik.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
